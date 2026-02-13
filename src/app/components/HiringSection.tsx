@@ -6,7 +6,7 @@ export default function ExcellenceSection() {
   return (
     <section className="relative py-24 bg-[#1e4b8a] overflow-hidden">
       {/* Background Tools Image (Low Opacity) - Swapped to Blue Overlay */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/tools-bg.jpg')] bg-cover bg-fixed grayscale" />
+      <div className="absolute inset-0 opacity-10 bg-[src('/tools-bg.jpg')] bg-cover bg-fixed grayscale" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#1e4b8a] to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">

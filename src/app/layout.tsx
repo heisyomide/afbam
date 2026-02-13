@@ -13,17 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  // Add this line to fix the warning
+  metadataBase: new URL("https://afbam.vercel.app"), 
+  
   title: "AFBAM Plumbing & Integrated Services | 24/7 Smart Plumbing Solutions",
   description: "Expert plumbing, leak detection, and smart home water integration. AFBAM provides reliable residential and commercial services you can trust.",
   keywords: ["Plumbing", "Smart Leak Detection", "Emergency Plumber", "Integrated Water Systems"],
   openGraph: {
     title: "AFBAM Plumbing & Integrated Services",
     description: "Reliable Plumbing & Smart Integration",
-    url: "https://afbam.com",
+    url: "https://afbam.com", // You can update this once you have your custom domain
     siteName: "AFBAM",
     images: [
       {
-        url: "/og-image.jpg", // Create a 1200x630 image for social sharing
+        url: "/logo.PNG", 
         width: 1200,
         height: 630,
       },
