@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -33,9 +34,11 @@ export default function Hero() {
             </p>
             
             <div>
+              <Link href="contact">
               <button className="bg-white text-[#1e4b8a] font-black py-5 px-10 md:py-7 md:px-16 rounded-full shadow-[0_20px_60px_rgba(0,0,0,0.4)] hover:scale-105 active:scale-95 transition-all uppercase text-[11px] md:text-sm tracking-widest">
                 Book Now
               </button>
+              </Link>
             </div>
           </div>
 

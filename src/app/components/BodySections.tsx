@@ -53,18 +53,20 @@ export default function BodySections() {
         </div>
 
         {/* The Water Pipe Graphic - Standalone Object */}
-        <div className="relative flex justify-center items-center">
-          <img 
-            src="/ppp.png" 
-            alt="Water Pipe Flowing" 
-            className="w-full max-w-md h-auto mix-blend-multiply transition-transform hover:scale-105 duration-500"
-            style={{ 
-              backgroundColor: 'transparent',
-              // This filter helps hide any lingering "fake" checkerboard or grey background pixels
-              filter: 'contrast(1.1) brightness(1.05)' 
-            }}
-          />
-        </div>
+<div className="relative flex justify-center items-center">
+  <img 
+    src="/ppp.png" 
+    alt="Water Pipe Flowing" 
+    
+    loading="eager"
+    fetchPriority="high"
+    className="w-full max-w-md h-auto mix-blend-multiply transition-transform hover:scale-105 duration-500"
+    style={{ 
+      backgroundColor: 'transparent',
+      filter: 'contrast(1.1) brightness(1.05)' 
+    }}
+  />
+</div>
       </section>
 
 {/* Section 3: Dual-Action Service Banner */}
