@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative bg-[#1e4b8a] h-[80vh] md:h-[650px] overflow-hidden flex items-center">
+    <section className="relative bg-[#1e4b8a] h-[90vh] md:h-[650px] overflow-hidden flex items-center">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1e4b8a] via-[#215299] to-[#255ba8]" />
       
