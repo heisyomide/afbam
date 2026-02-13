@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --maroon: #800000;
+  --gold: #F59E0B;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Arial', sans-serif; /* Clean, standard professional font */
+}
+
+.text-maroon { color: var(--maroon); }
+.bg-maroon { background-color: var(--maroon); }
+.liquid-bg {
+  background: linear-gradient(-45deg, #09090b, #1e1b4b, #09090b, #1e3a8a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @theme inline {
@@ -23,4 +44,37 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes waterFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.modern-gradient {
+  background: linear-gradient(-45deg, #09090b, #18181b, #09090b, #1e1e2e);
+  background-size: 400% 400%;
+  animation: waterFlow 15s ease infinite;
+}
+
+/* Custom Scrollbar for a modern look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(24, 24, 27, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
