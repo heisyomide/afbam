@@ -88,7 +88,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="lg:hidden absolute top-0 left-0 w-full h-screen bg-[#1e4b8a] flex flex-col items-center justify-center gap-8 z-[-1]"
           >
-            {["Services", "About", "Reviews", "Careers"].map((item) => (
+            {["Services", "About", "Testimonials", "Contact"].map((item) => (
               <Link 
                 key={item} 
                 href={`${item.toLowerCase()}`}
